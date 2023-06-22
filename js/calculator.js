@@ -1,7 +1,34 @@
-const add = (a, b) => a + b;
-const subtract = (a, b) => a - b;
-const multiply = (a, b) => a * b;
-const divide = (a, b) => a / b;
+const validateInput = (a, b) => {
+	if (typeof a !== 'number' || typeof b !== 'number') {
+		return false;
+	}
+	return true;
+};
+
+const add = (a, b) => {
+	if (validateInput(a, b)) {
+		return a + b;
+	}
+	throw new TypeError('Only inputs of number types are allowed.');
+};
+const subtract = (a, b) => {
+	if (validateInput(a, b)) {
+		return a - b;
+	}
+	throw new TypeError('Only inputs of number types are allowed.');
+};
+const multiply = (a, b) => {
+	if (validateInput(a, b)) {
+		return a * b;
+	}
+	throw new TypeError('Only inputs of number types are allowed.');
+};
+const divide = (a, b) => {
+	if (validateInput(a, b)) {
+		return a / b;
+	}
+	throw new TypeError('Only inputs of number types are allowed.');
+};
 
 const calculator = {
 	add,
@@ -9,5 +36,5 @@ const calculator = {
 	multiply,
 	divide,
 };
-calculator.add(3, 5);
+
 export default calculator;
