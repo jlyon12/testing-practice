@@ -4,6 +4,9 @@ import analyzeArray from './analyzeArray';
 test('Throw TypeError if arg !== array', () => {
 	expect(() => analyzeArray('foo')).toThrow(TypeError);
 });
+test('Throw TypeError array contains non number datatype', () => {
+	expect(() => analyzeArray([1, 2, 3, 4, 'foo', 5, 'bar'])).toThrow(TypeError);
+});
 
 test('Calculate average', () => {
 	const object = analyzeArray([1, 8, 3, 4, 2, 6]);
