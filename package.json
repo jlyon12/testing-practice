@@ -21,10 +21,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://git@github.com/probableactions/testing-practice.git"
+		"url": "git+ssh://git@github.com/jlyon12/testing-practice.git"
 	},
 	"bugs": {
-		"url": "https://github.com/probableactions/testing-practice/issues"
+		"url": "https://github.com/jlyon12/testing-practice/issues"
 	},
-	"homepage": "https://github.com/probableactions/testing-practice#readme"
+	"homepage": "https://github.com/jlyon12/testing-practice#readme"
 }
